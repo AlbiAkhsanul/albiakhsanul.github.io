@@ -46,7 +46,7 @@ table {
 body{
     box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
-    background-color: 252525;
+    background-color: #252525;
 }
 
 a {
@@ -84,7 +84,7 @@ a {
 #about-me{
     display: flex;
     padding: 0 10vw 0 10vw;
-    margin: 25vh 0 20vh 0;
+    margin: 23vh 0 15vh 0;
 }
     .about-me-info{
         margin-top: 6vh;
@@ -98,10 +98,30 @@ a {
         }
         .about-me-info p{
             font-size: 1.5em;
-            margin-top: 2.7vh;
+            margin: 2.7vh 0;
             color: #FFFFFF;
             line-height: 1.2;
         }
+        .about-me-info h2{
+            margin: 5px 10px 0 0;
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #FFB800;
+        }
+    #contact-item-head{
+        width: fit-content;
+        margin-top: 10px;
+        display:flex;
+        list-style: none;
+    }
+        #contact-item-head li{
+            margin: 0 20px 0 20px;
+            font-size: 40px;
+        }
+            #contact-item-head li a{
+                color: #FFB800;
+                text-decoration: none;
+            }
     .about-me-portrait{
         width: 40%;
     }
@@ -109,7 +129,7 @@ a {
             border-radius: 50%;
             margin-left: 2vw;
             width: 90%;
-            border: 0.1em solid #FFFFFF;
+            border: 0.15em solid #FFFFFF;
             box-shadow: 0.8em 0.8em #FFB800;
         }
 
@@ -144,16 +164,29 @@ a {
             color: #FFFFFF;
             line-height: 1.3;
         }
+        .edu-head{
+            font-weight: bold;
+        }
+        .edu-list{
+            margin-bottom: 2vh;
+        }
+        #edu-list-punchline{
+            color: #FFB800;
+        }
 
 #skill-and-experience {
     padding: 8vh 14vw 8vh 14vw;
     min-height: 120vh;
 }
+    #skill-exp-head-punchline{
+        color: #FFB800;
+    }
     .skills {
         display: flex;
         margin-bottom: 17vh;
     }
         .skills-info {
+            cursor: pointer;
             width: 60%;
             margin-right: 3vw;
         }
@@ -175,7 +208,7 @@ a {
         display: flex;
     }
         .experiences-image{
-            width: 40%;
+            width:40%;
         }
             .experiences-image img{
                 border-radius: 30px;
@@ -183,6 +216,7 @@ a {
                 width: 100%;
             }
         .experiences-info {
+            cursor: pointer;
             width: 60%;
             margin-left: 7vw;
         }
@@ -194,13 +228,14 @@ a {
     .skill-exp-head{
         color : #FFB800;
         margin-top: 2vh;
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     .skill-exp-desc{
         color: #FFFFFF;
         list-style: circle;
         margin-left: 2vw;
         line-height: 1.2;
+        font-size: 1.3em;
     }
 
 footer {
@@ -232,3 +267,23 @@ footer {
     .copyright p{
         color: #FFB800;
     }
+
+#toggle-mode {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: #564747; 
+    border: none; 
+    color: #FFB800; 
+    padding: 15px 32px; 
+    text-align: center; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0.2em 0.2em #FFB800;  
+}
+
+/* ---------------- Zoom Effect ---------------- */
+.BgAffectedByZoom {
+    opacity: 0.1;
+}
